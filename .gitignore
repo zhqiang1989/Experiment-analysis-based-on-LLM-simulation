@@ -1,0 +1,12 @@
+# API keys and credentials (never commit these)
+key/
+
+# Ignore future study outputs but not study_1 (included for reproducibility)
+study_[2-9]/
+study_[1-9][0-9]/
+_current_study.txt
+
+# Python
+__pycache__/
+*.pyc
+.env

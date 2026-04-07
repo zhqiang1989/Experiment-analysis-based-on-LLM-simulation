@@ -1,0 +1,22 @@
+{
+  "participant_id": 2,
+  "product_id": 2,
+  "condition": "control",
+  "system_prompt": "You are participating in a research study as a simulated participant. Respond as if you are a real person with these characteristics: Age 22, male, annual income $79,237, education: a master's degree, employment: full time, relationship status: divorced. Respond naturally and authentically. Do not break character or mention you are an AI.",
+  "task_prompt": "Earlier in this study, you were asked to complete a short writing task. The instructions were:\n\n\"Please take a few minutes to think about your typical weekday morning routine, from the moment you wake up until you start your main activity for the day (e.g., work, school). Consider the sequence of events in a neutral, factual way. In the box below, please describe this routine in detail.\"\n\nYou completed that writing task. Now please evaluate the following product:\n\n---\nProduct: Retro Arcade Hoodie (Apparel)\nList price: $55.0\nDescription: Stay warm in style with the Retro Arcade Hoodie. This premium, soft-fleece hoodie features a subtle, embroidered design of a classic 8-bit space invader on the chest and a vibrant, pixelated pattern inside the hood. It's a comfortable, high-quality garment that gives a nod to your gaming past without sacrificing modern style.\n---\n\nPlease answer each question honestly based on how you feel right now.\n\nManipulation check (how you feel RIGHT NOW, after the writing task):\n- mc_lonely: \"Right now, I feel lonely.\" (1=Strongly Disagree to 7=Strongly Agree)\n- mc_disconnected: \"Right now, I feel disconnected from others.\" (1=Strongly Disagree to 7=Strongly Agree)\n- mc_isolated: \"Right now, I feel isolated.\" (1=Strongly Disagree to 7=Strongly Agree)\n\nAbout this product:\n- wtp: What is the maximum price you would be willing to pay for this product? (Please enter a numerical value in USD, e.g., 15.50) (give a number in USD, e.g. 12.50)\n- purchase_intention: \"I would purchase this product.\" (1=Strongly Disagree to 7=Strongly Agree)\n- appeal_1: \"This product appeals to me.\" (1=Strongly Disagree to 7=Strongly Agree)\n- appeal_2: \"I find this product attractive.\" (1=Strongly Disagree to 7=Strongly Agree)\n- appeal_3: \"This product is desirable.\" (1=Strongly Disagree to 7=Strongly Agree)\n- med_nostalgia: \"This product reminds me of my childhood.\" (1=Strongly Disagree to 7=Strongly Agree)\n- med_comfort: \"This product would make me feel comforted.\" (1=Strongly Disagree to 7=Strongly Agree)\n- med_surrogate: \"This product would make me feel more connected.\" (1=Strongly Disagree to 7=Strongly Agree)\n- attention_check: \"For quality control, please select the number 4 for this item.\" (1-7, correct answer is 4)\n\nRespond ONLY with valid JSON:\n{\n  \"mc_lonely\": <1-7>,\n  \"mc_disconnected\": <1-7>,\n  \"mc_isolated\": <1-7>,\n  \"wtp\": <number>,\n  \"purchase_intention\": <1-7>,\n  \"appeal_1\": <1-7>,\n  \"appeal_2\": <1-7>,\n  \"appeal_3\": <1-7>,\n  \"attention_check\": <1-7>,\n  \"med_nostalgia\": <1-7>,\n  \"med_comfort\": <1-7>,\n  \"med_surrogate\": <1-7>\n}",
+  "raw_response": "{\n  \"mc_lonely\": 3,\n  \"mc_disconnected\": 3,\n  \"mc_isolated\": 2,\n  \"wtp\": 45.00,\n  \"purchase_intention\": 5,\n  \"appeal_1\": 6,\n  \"appeal_2\": 6,\n  \"appeal_3\": 5,\n  \"attention_check\": 4,\n  \"med_nostalgia\": 4,\n  \"med_comfort\": 6,\n  \"med_surrogate\": 3\n}",
+  "parsed_response": {
+    "mc_lonely": 3,
+    "mc_disconnected": 3,
+    "mc_isolated": 2,
+    "wtp": 45.0,
+    "purchase_intention": 5,
+    "appeal_1": 6,
+    "appeal_2": 6,
+    "appeal_3": 5,
+    "attention_check": 4,
+    "med_nostalgia": 4,
+    "med_comfort": 6,
+    "med_surrogate": 3
+  }
+}

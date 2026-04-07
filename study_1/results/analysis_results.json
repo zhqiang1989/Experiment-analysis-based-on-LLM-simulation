@@ -1,0 +1,271 @@
+{
+  "attention_check_pass_rate": 1.0,
+  "manipulation_check": {
+    "loneliness_mean": 5.713,
+    "loneliness_sd": 0.089,
+    "control_mean": 1.707,
+    "control_sd": 0.703,
+    "t": 17.883,
+    "p": 0.0,
+    "cohens_d": 7.998
+  },
+  "integrated_regression": {
+    "test_type": "OLS_with_controls_clustered_SE",
+    "condition_coef": 0.527,
+    "condition_se": 0.287,
+    "condition_t": 1.84,
+    "condition_p": 0.065723,
+    "r_squared": 0.9596,
+    "adj_r_squared": 0.9506,
+    "n_obs": 100,
+    "controls": [
+      "age",
+      "gender",
+      "income",
+      "education",
+      "employment",
+      "relationship_status",
+      "product_id"
+    ],
+    "full_summary": "                            OLS Regression Results                            \n==============================================================================\nDep. Variable:                    wtp   R-squared:                       0.960\nModel:                            OLS   Adj. R-squared:                  0.951\nMethod:                 Least Squares   F-statistic:                     586.7\nDate:                Tue, 07 Apr 2026   Prob (F-statistic):           3.13e-22\nTime:                        00:35:45   Log-Likelihood:                -240.61\nNo. Observations:                 100   AIC:                             519.2\nDf Residuals:                      81   BIC:                             568.7\nDf Model:                          18                                         \nCovariance Type:              cluster                                         \n=============================================================================================================\n                                                coef    std err          z      P>|z|      [0.025      0.975]\n-------------------------------------------------------------------------------------------------------------\nIntercept                                     1.8989      0.904      2.101      0.036       0.127       3.671\nC(gender)[T.male]                             0.0272      0.356      0.076      0.939      -0.670       0.725\nC(gender)[T.non-binary]                       2.0406      0.507      4.023      0.000       1.046       3.035\nC(education)[T.high_school]                  -2.7806      0.435     -6.386      0.000      -3.634      -1.927\nC(education)[T.masters]                      -0.0618      0.310     -0.199      0.842      -0.670       0.547\nC(employment)[T.part_time]                    0.7110      0.396      1.797      0.072      -0.064       1.486\nC(employment)[T.retired]                     -2.4398      0.444     -5.501      0.000      -3.309      -1.571\nC(employment)[T.student]                     -0.2776      0.477     -0.581      0.561      -1.213       0.658\nC(employment)[T.unemployed]                  -4.1941      0.888     -4.724      0.000      -5.934      -2.454\nC(relationship_status)[T.in_relationship]     1.3643      0.480      2.844      0.004       0.424       2.305\nC(relationship_status)[T.married]            -0.6297      0.577     -1.092      0.275      -1.760       0.501\nC(relationship_status)[T.single]              0.6599      0.563      1.171      0.241      -0.444       1.764\nC(product_id)[T.2]                           35.3250      1.443     24.476      0.000      32.496      38.154\nC(product_id)[T.3]                           10.1250      0.622     16.268      0.000       8.905      11.345\nC(product_id)[T.4]                            2.9250      0.837      3.496      0.000       1.285       4.565\nC(product_id)[T.5]                            3.8745      0.266     14.577      0.000       3.354       4.395\ncondition_code                                0.5273      0.287      1.840      0.066      -0.034       1.089\nage                                          -0.0415      0.017     -2.451      0.014      -0.075      -0.008\nincome                                     7.089e-05   6.54e-06     10.844      0.000    5.81e-05    8.37e-05\n==============================================================================\nOmnibus:                       21.170   Durbin-Watson:                   2.257\nProb(Omnibus):                  0.000   Jarque-Bera (JB):               38.376\nSkew:                          -0.856   Prob(JB):                     4.64e-09\nKurtosis:                       5.505   Cond. No.                     9.35e+05\n==============================================================================\n\nNotes:\n[1] Standard Errors are robust to cluster correlation (cluster)\n[2] The condition number is large, 9.35e+05. This might indicate that there are\nstrong multicollinearity or other numerical problems."
+  },
+  "wtp_ttest": {
+    "loneliness_mean": 15.45,
+    "loneliness_sd": 2.466,
+    "control_mean": 15.3,
+    "control_sd": 2.442,
+    "t": 0.137,
+    "p": 0.892667,
+    "cohens_d": 0.061,
+    "ci_95": [
+      -2.001,
+      2.301
+    ]
+  },
+  "purchase_intention_ttest": {
+    "loneliness_mean": 3.82,
+    "control_mean": 3.22,
+    "t": 1.522,
+    "p": 0.145455,
+    "cohens_d": 0.681
+  },
+  "appeal_ttest": {
+    "loneliness_mean": 4.547,
+    "control_mean": 3.9,
+    "t": 2.127,
+    "p": 0.047522,
+    "cohens_d": 0.951
+  },
+  "per_product_wtp": [
+    {
+      "product_id": 1,
+      "product_name": "Cosmic Crunch Cereal Bites",
+      "loneliness_mean": 5.0,
+      "loneliness_sd": 1.08,
+      "control_mean": 4.85,
+      "control_sd": 0.67,
+      "t": 0.373,
+      "p": 0.713225,
+      "cohens_d": 0.167
+    },
+    {
+      "product_id": 2,
+      "product_name": "Retro Arcade Hoodie",
+      "loneliness_mean": 39.5,
+      "loneliness_sd": 7.25,
+      "control_mean": 41.0,
+      "control_sd": 6.15,
+      "t": -0.499,
+      "p": 0.623664,
+      "cohens_d": -0.223
+    },
+    {
+      "product_id": 3,
+      "product_name": "Dino-Plant Holder",
+      "loneliness_mean": 15.7,
+      "loneliness_sd": 2.87,
+      "control_mean": 14.4,
+      "control_sd": 3.13,
+      "t": 0.967,
+      "p": 0.346129,
+      "cohens_d": 0.433
+    },
+    {
+      "product_id": 4,
+      "product_name": "Jelly-Pop Keychain Wallet",
+      "loneliness_mean": 8.0,
+      "loneliness_sd": 2.91,
+      "control_mean": 7.7,
+      "control_sd": 3.74,
+      "t": 0.2,
+      "p": 0.84357,
+      "cohens_d": 0.09
+    },
+    {
+      "product_id": 5,
+      "product_name": "Gummy Bear Fizz Seltzer (6-pack)",
+      "loneliness_mean": 9.05,
+      "loneliness_sd": 1.61,
+      "control_mean": 8.55,
+      "control_sd": 1.14,
+      "t": 0.804,
+      "p": 0.43211,
+      "cohens_d": 0.359
+    }
+  ],
+  "product_x_condition": {
+    "F": 0.384,
+    "p": 0.819308
+  },
+  "demographic_breakdowns": {
+    "gender": {
+      "female": {
+        "loneliness_mean": 17.03,
+        "control_mean": 16.8,
+        "t": 0.046,
+        "p": 0.9639,
+        "d": 0.017,
+        "n": 30
+      },
+      "male": {
+        "loneliness_mean": 14.83,
+        "control_mean": 14.5,
+        "t": 0.095,
+        "p": 0.925,
+        "d": 0.024,
+        "n": 60
+      },
+      "non-binary": {
+        "loneliness_mean": 14.4,
+        "control_mean": 15.6,
+        "t": -0.144,
+        "p": 0.8891,
+        "d": -0.091,
+        "n": 10
+      }
+    },
+    "age_group": {
+      "36-50": {
+        "loneliness_mean": 14.08,
+        "control_mean": 15.4,
+        "t": -0.362,
+        "p": 0.7189,
+        "d": -0.102,
+        "n": 50
+      },
+      "18-25": {
+        "loneliness_mean": 16.82,
+        "control_mean": 16.8,
+        "t": 0.003,
+        "p": 0.9978,
+        "d": 0.001,
+        "n": 30
+      }
+    },
+    "income_group": {
+      "High": {
+        "loneliness_mean": 16.2,
+        "control_mean": 16.52,
+        "t": -0.058,
+        "p": 0.9545,
+        "d": -0.022,
+        "n": 30
+      },
+      "Low": {
+        "loneliness_mean": 12.87,
+        "control_mean": 9.7,
+        "t": 0.603,
+        "p": 0.5538,
+        "d": 0.327,
+        "n": 20
+      },
+      "Medium": {
+        "loneliness_mean": 16.38,
+        "control_mean": 14.8,
+        "t": 0.361,
+        "p": 0.7202,
+        "d": 0.114,
+        "n": 40
+      },
+      "Very High": {
+        "loneliness_mean": 18.0,
+        "control_mean": 18.0,
+        "t": 0.0,
+        "p": 1.0,
+        "d": 0.0,
+        "n": 10
+      }
+    },
+    "relationship_status": {
+      "single": {
+        "loneliness_mean": 16.82,
+        "control_mean": 13.85,
+        "t": 0.55,
+        "p": 0.5869,
+        "d": 0.218,
+        "n": 30
+      },
+      "married": {
+        "loneliness_mean": 14.04,
+        "control_mean": 15.32,
+        "t": -0.329,
+        "p": 0.7438,
+        "d": -0.098,
+        "n": 45
+      },
+      "in_relationship": {
+        "loneliness_mean": 17.0,
+        "control_mean": 15.7,
+        "t": 0.165,
+        "p": 0.8714,
+        "d": 0.092,
+        "n": 15
+      }
+    }
+  },
+  "mediation": {
+    "nostalgia": {
+      "path_a": -0.1,
+      "path_a_p": 0.6336,
+      "path_b": -0.292,
+      "path_b_p": 0.8233,
+      "direct_effect": 0.121,
+      "direct_p": 0.9164,
+      "indirect": 0.029
+    },
+    "comfort": {
+      "path_a": 1.18,
+      "path_a_p": 0.0,
+      "path_b": 2.365,
+      "path_b_p": 0.0387,
+      "direct_effect": -2.64,
+      "direct_p": 0.1157,
+      "indirect": 2.79
+    },
+    "surrogate": {
+      "path_a": 0.76,
+      "path_a_p": 0.0001,
+      "path_b": 2.292,
+      "path_b_p": 0.1861,
+      "direct_effect": -1.592,
+      "direct_p": 0.3502,
+      "indirect": 1.742
+    }
+  },
+  "descriptives": {
+    "control": {
+      "wtp_mean": 15.3,
+      "wtp_sd": 13.783,
+      "pi_mean": 3.22,
+      "appeal_mean": 3.9,
+      "n_obs": 50
+    },
+    "loneliness": {
+      "wtp_mean": 15.45,
+      "wtp_sd": 13.169,
+      "pi_mean": 3.82,
+      "appeal_mean": 4.547,
+      "n_obs": 50
+    }
+  }
+}
